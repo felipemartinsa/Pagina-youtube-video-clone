@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Nome do vídeo</title>
+		<script type="text/javascript" src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+		
+		<header id="header"> <!--referente a parte superior-->
+
+			<nav id="nav"> <!--referente ao conteudo do header-->
+
+				<div id="hb-e-logo">  <!--hb & logo-->
+
+					<div id="base-hamburguer" onclick="fechaMenuLateral()"></div> <!--usada para preencher espeço quando o menu lateral abrir-->
+
+					<div id="base-barra"> <!--usada para abrigar os elementos que aparecem na tela e os que estão ocultos no menu lateral-->
+
+						<div id="logo-btn-final">
+							<button id="btn-hb" class="btn" onclick="abreMenuLateral()"><span id="barra-btn"></span></button>
+
+							<a href=""><img src="imagens/logo.png" class="logo"></a>
+						</div>
+
+						<div id="acesso-hamburger"> <!--conteúdo acessado no menu lateral-->
+
+							<ul>
+								<li><a href=""><i class="fa fa-home" aria-hidden="true"></i><span>Início</span></a></li>
+								<li><a href=""><i class="fa fa-compass" aria-hidden="true"></i><span>Explorar</span></a></li>
+								<li><a href=""><i class="fa fa-film" aria-hidden="true"></i><span>Shorts</span></a></li>
+								<li><a href=""><i class="fa fa-file-video-o" aria-hidden="true"></i><span>Inscrições</span></a></li>
+							</ul>
+
+							<div class="line"></div>
+
+							<ul>
+								<li><a href=""><i class="fa fa-file-video-o" aria-hidden="true"></i><span>Biblioteca</span></a></li>
+								<li><a href=""><i class="fa fa-history" aria-hidden="true"></i><span>Histórico</span></a></li>
+								<li><a href=""><i class="fa fa-clock-o" aria-hidden="true"></i><span>Assistir mais tarde</span></a></li>
+								<li><a href=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span>Vídeos Marcados co...</span></a></li>
+							</ul>
+
+							<div class="line"></div>
+
+							<h3>INSCRIÇÕES</h3>
+
+							<ul>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>Origamid</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>Mercelo Bechler</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>Ciência Todo Dia</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>Mark Wiens</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>JetLag Warriors</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>Nerdologia</span></a></li>
+								<li><a href=""><i class="fa fa-user-circle" aria-hidden="true"></i><span>TEDx Talks</span></a></a></li>
+							</ul>
+
+							<div class="line"></div> 
+								
+							<h3>EXPLORAR</h3>
+
+							<ul>
+								<li><a href=""><i class="fa fa-film" aria-hidden="true"></i><span>Filmes</span></a></li>
+								<li><a href=""><i class="fa fa-gamepad" aria-hidden="true"></i><span>Jogos</span></a></li>
+								<li><a href=""><i class="fa fa-signal" aria-hidden="true"></i><span>Ao Vivo</span></a></li>
+								<li><a href=""><i class="fa fa-lightbulb-o" aria-hidden="true"></i><span>Aprender</span></a></li>
+								<li><a href=""><i class="fa fa-trophy" aria-hidden="true"></i><span>Esportes</span></a></li>
+							</ul>
+
+							<div class="line"></div> 
+
+							<h3>MAIS DO YOUTUBE</h3>
+
+							<ul>
+								<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i><span>YouTube Premium</span></a></li>
+								<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i><span>Estúdio de Criação</span></a></li>
+								<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i><span>YouTube Music</span></a></li>
+								<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i><span>YouTube Kids</span></a></li>
+								<li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i><span>YouTube TV</span></a></li>
+							</ul>
+
+							<div class="line"></div> 
+
+							<ul>
+								<li><a href=""><i class="fa fa-cog" aria-hidden="true"></i><span>Configurações</span></a></li>
+								<li><a href=""><i class="fa fa-flag-o" aria-hidden="true"></i><span>Histórico de Denúncias</span></a></li>
+								<li><a href=""><i class="fa fa-question-circle-o" aria-hidden="true"></i><span>Dúvidas</span></a></li>
+								<li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i><span>Enviar FeedBack</span></a></li>
+							</ul>
+
+							<div class="line"></div> 
+
+							<ul class="conf2"> <!--Frases links no pé-->
+								<li><a href="">Sobre Imprensa</a></li>
+								<li><a href="">Direitos autorais</a></li>
+								<li><a href="">Entre em contato</a></li>
+								<li><a href="">Criadores de Conteúdo</a></li>
+								<li><a href="">Publicidade Desenvolvedores</a></li>
+							</ul>
+
+							<ul class="conf2">
+								<li><a href="">Termos Privacidade</a></li>
+								<li><a href="">Política e segurança</a></li>
+								<li><a href="">Como funciona o YouTube</a></li>
+								<li><a href="">Testar os novos recursos</a></li>
+							</ul>
+
+							<p>&copy; 2022 Google LLC</p>
+
+						</div>
+
+					</div>
+							
+				</div>
+
+				<!--<div id="outros-botoes-cabecalho">--> <!-- outros botões cabeçalho-->
+
+					<div id="botao-pesquisa-mic"> <!--botão de pesquisa & microfone-->
+						<button id="back" class="btn" onclick="searchModeOut()"><i class="fa fa-arrow-left icon-size" aria-hidden="true"></i></button>
+						<input type="search" name="" placeholder="Pesquisar" id="head-search">
+						<button class="btn-v2" onclick="searchModeIn()" id="btn-search" type="submit"><i class="fa fa-search icon-size" aria-hidden="true"></i></button>
+						<button class="btn" id="btn-mic"><i class="fa fa-microphone icon-size" aria-hidden="true"></i></button>
+					</div>
+
+					<div id="outros-botoes"> <!--outros botões-->
+						<button class="btn"><i class="fa fa-video-camera icon-size" aria-hidden="true"></i></button>
+						<button class="btn"><i class="fa fa-bell-o icon-size" aria-hidden="true"></i></button>
+						<button class="btn"><i class="fa fa-user-circle icon-size" aria-hidden="true"></i></button>
+					</div>
+					
+				<!--</div>-->
+
+			</nav>
+
+		</header>
+
+		<div id="container-pai"> <!--engloba todo o conteúdo-->
+
+			<div id="area-video"> <!--engloba todos os componentes do vídeo-->
+
+				<iframe src="https://www.youtube.com/watch?v=69-jnA4QLSM"></iframe> <!--vídeo-->
+
+				<h1>O Enigma da Antimatéria</h1>
+
+				<div id="esconde-visualizacao">
+					<div id="visualizacoes">1.207.109 visualizações...</div>
+
+					<nav id="abaixo-video"> <!--Botões/links-->
+
+						<ul>
+							
+							<li><a href=""><i class="fa fa-thumbs-o-up" aria-hidden="true"></i><span>122 MIL</span></a></li>
+							<li><a href=""><i class="fa fa-thumbs-o-down" aria-hidden="true"></i><span>NÃO<br>GOSTEI</span></a></li>
+							<li><a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i><span>COMPARTILHAR</span></a></li>
+							<li><a href=""><i class="fa fa-download" aria-hidden="true"></i><span>DOWNLOAD</span></a></li>
+							<li><a href=""><i class="fa fa-scissors" aria-hidden="true"></i><span>CLIPE</span></a></li>
+							<li><a href=""><i class="fa fa-floppy-o" aria-hidden="true"></i><span>SALVAR</span></a></li>
+							<li><a href=""><span>...</span></a></li>
+
+						</ul>
+
+					</nav>
+				</div>
+
+				<div class="line-2"></div> <!--linha horizontal-->
+
+				<div id="info-channel"> <!--Informações do canal-->
+
+					<div id="zona-superior">
+
+						<div id="foto-nome"> <!--foto e nome-->
+
+							<a><img src="https://yt3.ggpht.com/ytc/AMLnZu_I9SKhqEqL2YuI7M5-D4oVBtRfQB0lXVQ1FGsAAA=s900-c-k-c0x00ffffff-no-rj"></a>
+
+							<div>
+								<a>Ciência Todo Dia</a>
+								<span>3,15 mi de inscritos</span>
+							</div>
+							
+						</div>
+
+						<div id="botoes-channel"> <!--botoes-->
+
+							<button id="membro-button">SEJA MEMBRO</button>
+							<button id="subscribe-button">INSCRITO</button>
+							<button class="btn"><i class="fa fa-bell-o icon-size"></i></button>
+							
+						</div>
+						
+					</div>
+
+					<div id="texto-descritivo">
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+						
+					</div>
+					
+				</div>
+
+				<div class="line-2"></div> <!--linha horizontal-->
+
+				
+			</div>
+
+			<div id="area-sugeridos"> <!--engloba tudo que envolve vídeos sugeridos-->
+
+				<div id="anuncio-1"> <!--anuncio-->
+					<a><img src="https://static.portugues.com.br/2022/04/1-anuncio-publicitario.jpg"></a>
+				</div>
+
+				<nav id="nav-sugeridos"> <!--seletor de tema-->
+
+					<div class="degrade-left" id="degrade-esquerdo"><button class="slide left" onclick="rolaEsquerda()" id="botao-esquerdo"><i class="fa fa-angle-left" aria-hidden="true"></i></button></div>
+					<div class="degrade-right" id="degrade-direito"><button class="slide right" onclick="rolaDireita()" id="botao-direito"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div>
+					
+					<ul id="lista-sugeridos" >
+						<li><a href="">Todos</a></li> <li><a href="">Big Bang</a></li> 
+						<li><a href="">Estrelas</a></li> <li><a href="">Física</a></li>
+						<li><a href="">Relacionamentos</a></li> <li><a href="">Ao Vivo</a></li>
+						<li><a href="">De Ciência Todo Dia</a></li> <li><a href="">Assistidos</a></li>
+						<li><a href="">Enviados Recentimente</a></li>
+					</ul>
+
+				</nav>
+
+				<div id="secao-videos"> <!--videos-->
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<a><div class="conteudo-video"><img src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/10/james_webb_chandra_fotos__14m58h01q-1210x544.jpg"><div class="conteudo-titulo"><h3>Supernovas Explicadas: As Maiores Explosões do Universo</h3><h6>Ciência Todo Dia</h6><span class="conteudo">554 mil visualizações</span><span class="bolinha"></span><span class="conteudo">há 2 anos</span></div></div>
+					<button class="info-video"><span class="info-bolinha"></span></button></a>
+
+					<button class="mostrar-mais"><h5>MOSTRAR MAIS</h5></button>
+					
+				</div>
+
+			</div>
+
+			<div id="area-comentarios"> <!--engloba comentários-->
+			
+				<div> <!--Numero de comentários e oedenação-->
+					<span class="number-comments">3.621</span><span class="number-comments">comentários</span><button id="order-button"><i class="fa fa-bars" aria-hidden="true"></i>ORDERNAR POR</button>
+				</div>
+
+				<div id="conta-pessoal"> <!--Dados de sua conta e adiçao de cometários-->
+					<img src="https://www.forestcom.com.br/wp-content/uploads/2018/09/blank-profile-picture-973460_640.png">
+					<div class="conteudo">
+						<p>Adicionar comentários públicos como <strong>Felipe Martins de Almeida</strong></p>
+						<div class="line"></div>
+					</div>
+				</div> 
+
+				<div id="comentarios"> <!--Comentários de Fato-->
+
+					<div class="comentario">
+						<a href="" class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU"></a>
+						<div class="conteudo">
+							<a><h1>Nome</h1></a> <h2>há 1 ano</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div><a><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a><span class="numero-likes">38</span><a><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a><a><span class="responder">RESPONDER</span></a></div>
+						</div>
+					</div>
+
+					<div class="comentario">
+						<a href="" class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU"></a>
+						<div class="conteudo">
+							<a><h1>Nome</h1></a> <h2>há 1 ano</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div><a><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a><span class="numero-likes">38</span><a><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a><a><span class="responder">RESPONDER</span></a></div>
+						</div>
+					</div>
+
+					<div class="comentario">
+						<a href="" class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU"></a>
+						<div class="conteudo">
+							<a><h1>Nome</h1></a> <h2>há 1 ano</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div><a><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a><span class="numero-likes">38</span><a><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a><a><span class="responder">RESPONDER</span></a></div>
+						</div>
+					</div>
+
+					<div class="comentario">
+						<a href="" class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU"></a>
+						<div class="conteudo">
+							<a><h1>Nome</h1></a> <h2>há 1 ano</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div><a><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a><span class="numero-likes">38</span><a><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a><a><span class="responder">RESPONDER</span></a></div>
+						</div>
+					</div>
+
+					<div class="comentario">
+						<a href="" class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54088iJjHpn-y9FCxGAh5NBEdHugwIXewWQ&usqp=CAU"></a>
+						<div class="conteudo">
+							<a><h1>Nome</h1></a> <h2>há 1 ano</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi orci, euismod vitae pretium ut, tristique eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div><a><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a><span class="numero-likes">38</span><a><i class="fa fa-thumbs-o-down" aria-hidden="true"></i></a><a><span class="responder">RESPONDER</span></a></div>
+						</div>
+					</div>
+					
+				</div>	
+
+			</div>
+		
+		</div>
+
+	</body>
+
+	<script type="text/javascript">verificaRolagem()</script>
+
+</html>
